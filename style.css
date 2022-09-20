@@ -17,7 +17,6 @@ header {
 }
 
 header div {
-
   width: 120px;
   margin: auto;
   background-image: linear-gradient(
@@ -29,17 +28,13 @@ header div {
   border-radius: 60%;
   display: flex;
   padding: 4px;
-  transition: transform .3s;
-  animation: fromTop .8s .2s backwards;
-  
+  transition: transform 0.3s;
+  animation: fromTop 0.8s 0.2s backwards;
 }
 
-header div:hover{
-    transform: scale(1.1);
+header div:hover {
+  transform: scale(1.1);
 }
-
-
-
 
 header img {
   width: 100%;
@@ -56,26 +51,29 @@ main {
 }
 
 section {
-  color: white;
+  color: rgb(196, 32, 32);
   background-image: linear-gradient(
     90deg,
-    #9572fc 0%,
+    #faf9ff 0%,
     #43e7ad 50.52%,
     #e2d45c 100%
   );
-  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-right: 4px;
+  padding-left: 3px;
+  padding-top: 8px;
   border-radius: 10px;
-  animation: fromBottom .7s backwards;
+  animation: fromBottom 0.7s backwards;
 }
 
 section:nth-child(1) {
-    animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 section:nth-child(2) {
-    animation-delay: .6s;
+  animation-delay: 0.6s;
 }
 section:nth-child(3) {
-    animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 section div {
@@ -83,6 +81,7 @@ section div {
   padding: 32px;
   padding-top: 24px;
   border-radius: 8px;
+  transition:cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 section h2 {
@@ -102,16 +101,24 @@ section ul {
 }
 
 section ul li {
-    transition: transform .3s;
+  transition: transform 0.3s;
 }
 
-section ul li:hover{
-    transform: scale(1.1);
+section ul li:hover {
+  transform: scale(1.1);
+}
+section div:hover{
+  color: #faf9ff;
+  background-color: #090908;
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 .games-list img {
+  padding-top: 3px;
   width: 90px;
   border-radius: 8px;
+  background-color: #9572fc;
 }
 
 .channel-list img {
@@ -119,4 +126,3 @@ section ul li:hover{
   width: 70px;
   border: 1px solid #443e54;
 }
-
